@@ -7,7 +7,6 @@ package chapter_1;
  * If the "compressed" string would not become smaller than the original string,
  * your method should return the original string. You can assume the string has only uppercase and lowercase letters (a-z).
  */
-// TODO: 12/12/2018 Add remaining comments to explain counting process
 class StringCompression {
     static String compress(final String input) {
         final int inputSize = input.length();
@@ -28,6 +27,7 @@ class StringCompression {
                 compressedInput.append(observedHead).append(1);
             tail = head;
         }
+        // Return original string if compressed version is not shorter
         return compressedInput.length() < inputSize ? compressedInput.toString() : input;
 
     }
