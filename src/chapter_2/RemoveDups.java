@@ -5,6 +5,7 @@ import chapter_2.linkedlist_structure.ListNode;
 import java.util.*;
 
 /**
+ * Problem 2.1
  * Write code to remove duplicates from an unsorted linked list.
  * FOLLOW UP
  * How would you solve this problem if a temporary buffer is not allowedInteger

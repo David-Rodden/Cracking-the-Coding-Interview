@@ -3,6 +3,7 @@ package chapter_2;
 import chapter_2.linkedlist_structure.ListNode;
 
 /**
+ * Problem 2.2
  * Implement an algorithm to find the kth to last element of a singly linked list.
  */
 class ReturnKthToLast {
@@ -18,10 +19,8 @@ class ReturnKthToLast {
 
     private static int getSize(ListNode inputPointer) {
         int size = 0;
-        while (inputPointer != null) {
+        for (; inputPointer != null; size++)
             inputPointer = inputPointer.getNext();
-            size++;
-        }
         return size;
     }
 }
