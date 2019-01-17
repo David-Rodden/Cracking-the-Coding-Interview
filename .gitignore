@@ -1,3 +1,5 @@
 .idea/
 out/
 CodingPractice.iml
+.gitignore
+*/*.class
